@@ -1,0 +1,70 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Remove the anoying bell
+set visualbell
+
+" Do incremental searching.
+set incsearch
+
+let mapleader=" "
+inoremap kj <Esc>
+nnoremap <leader>j `.
+nnoremap <leader>k ''
+nnoremap <leader>ma ma
+nnoremap <leader>a 'a
+
+nnoremap <leader>q :q<enter>
+nnoremap <leader>w :w<enter>
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+map gI <Action>(ReSharperGotoImplementation)
+
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+map <leader>gc <Action>(RiderCollapseToDefinitions)
+map <leader>ge <Action>(ExpandAllRegions)
+
+map <leader>bw <Action>(ActivateBuildToolWindow)
+map <leader>bs <Action>(BuildWholeSolutionAction)
+map <leader>bc <Action>(BuildOnlyCurrentProject)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+" Harpoon
+nmap <leader>u <action>(HarpoonerOpenFile0)
+nmap <leader>i <action>(HarpoonerOpenFile1)
+nmap <leader>o <action>(HarpoonerOpenFile2)
+nmap <leader>p <action>(HarpoonerOpenFile3)
+nmap <leader>hm <action>(HarpoonerQuickMenu)
+nmap <leader>ha <action>(HarpoonerAddFile)
+nmap <leader>hc <action>(HarpoonerClearMenu)
+nmap <leader>hn <action>(HarpoonerNextFileAction)
+nmap <leader>hp <action>(HarpoonerPreviousFileAction)
+
+" Windows shortcuts
+nmap <leader>ef <action>(ActivateProjectToolWindow)
+nmap <leader>et <action>(ActivateUnitTestsToolWindow)
