@@ -1,0 +1,1 @@
+scoop install versions/steam
