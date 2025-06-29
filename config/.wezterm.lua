@@ -10,7 +10,7 @@ local config = {
 		saturation = 1.0,
 		brightness = 1.0,
 	},
-	font = wezterm.font("FiraCode Nerd Font"),
+	font = wezterm.font("JetBrains Mono"),
 	font_size = 16.0,
 	launch_menu = {},
 	leader = { key = "j", mods = "CTRL" },

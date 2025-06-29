@@ -2,7 +2,7 @@ general:
   # Commands to run when the WM has started. This is useful for running a
   # script or launching another application.
   # Example: The below command launches Zebar.
-  startup_commands: ['shell-exec zebar']
+  startup_commands: []
 
   # Commands to run just before the WM is shutdown.
   # Example: The below command kills Zebar.
@@ -164,7 +164,7 @@ window_rules:
   - commands: ["set-floating"]
     match:
       - window_process: { equals: "rider64" }
-        # todo: try to catch everything with one expression 
+        # todo: try to catch everything with one expression
         window_title: { regex: "Breakpoints|Settings|Evaluate" }
 
 keybindings:

@@ -76,6 +76,8 @@ function Copy-File
 }
 
 # Call the function
-Copy-Dir "config" "$HOME/.config-test"
-Copy-File "config/otherconfig" "$HOME/.config-test/otherconfig"
+Copy-Dir "config/.glzr" "$HOME/.glzr"
+Copy-File "config/.wezterm.lua" "$HOME/.wezterm.lua"
+Copy-File "config/.ideavimrc" "$HOME/.ideavimrc"
+Copy-File "config/powershell/Microsoft.Powershell_profile.ps1" "$PROFILE"
 
