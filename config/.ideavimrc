@@ -27,8 +27,10 @@ nnoremap <leader>w :w<enter>
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
-map gI <Action>(ReSharperGotoImplementation)
-
+map gi <Action>(ReSharperGotoImplementation)
+map gb <Action>(GotoSuperMethod)
+map gn <Action>(ShowNavBar)
+map gf <Action>(GotoRelated)
 
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
 
