@@ -103,3 +103,30 @@ function gclean
 {
     git branch --merged | Where-Object { $_ -notmatch "main|master|develop" } | ForEach-Object { git branch -d $_.Trim() }
 }
+
+## cget cset
+
+$Global:CliCommandFile = "$HOME\personal\dev-win-private\cli-commands.txt"
+
+function cset {
+    param (
+        [Parameter(Mandatory = $true)]
+        [string]$Command
+    )
+
+    if (Test-Path $CliCommandFile) {
+        $exists = Get-Content $CliCommandFile | Where-Object { $_ -ieq $Command }
+        if ($exists) {
+            Write-Host "Command already saved. Skipping."
+            return
+        }
+    }
+
+    Add-Content -Path $CliCommandFile -Value $Command
+    Write-Host "Saved: $Command"
+}
+
+function cget {
+    Get-Content $CliCommandFile | fzf | clip
+}
+
