@@ -1,0 +1,3 @@
+[submodule "dev-win-private"]
+	path = dev-win-private
+	url = git@github.com:jsnog3/dev-win-private.git
