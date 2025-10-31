@@ -14,7 +14,6 @@ local config = {
 	font_size = 16.0,
 	launch_menu = {},
 	leader = { key = "j", mods = "CTRL" },
-	disable_default_key_bindings = true,
 	set_environment_variables = {},
 }
 
@@ -107,6 +106,11 @@ config.keys = {
 		key = "P",
 		mods = "CTRL",
 		action = wezterm.action.ActivateCommandPalette,
+	},
+	{
+		key = "l",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.DisableDefaultAssignment,
 	},
 }
 
