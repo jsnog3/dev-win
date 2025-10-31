@@ -130,3 +130,9 @@ function cget {
     Get-Content $CliCommandFile | fzf | clip
 }
 
+## notifications
+
+function notify {
+    New-BurntToastNotification -Text "PowerShell", "Command has completed"
+}
+
