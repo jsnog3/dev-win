@@ -135,4 +135,3 @@ function cget {
 function notify {
     New-BurntToastNotification -Text "PowerShell", "Command has completed"
 }
-
