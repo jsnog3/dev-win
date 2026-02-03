@@ -106,7 +106,7 @@ function gclean
 
 ## cget cset
 
-$Global:CliCommandFile = "$HOME\personal\dev-win-private\cli-commands.txt"
+$Global:CliCommandFile = "$HOME\personal\dev-win\dev-win-private\cli-commands.txt"
 
 function cset {
     param (
