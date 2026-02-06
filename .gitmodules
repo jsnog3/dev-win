@@ -1,3 +1,9 @@
 [submodule "dev-win-private"]
 	path = dev-win-private
-	url = git@github.com:jsnog3/dev-win-private.git
+	url = https://github.com/jsnog3/dev-win-private
+[submodule "kickstart.nvim"]
+	path = kickstart.nvim
+	url = https://github.com/jsnog3/kickstart.nvim.git
+[submodule "config/kickstart.nvim"]
+	path = config/kickstart.nvim
+	url = https://github.com/jsnog3/kickstart.nvim.git

@@ -15,11 +15,15 @@ local config = {
     launch_menu = {},
     leader = { key = "j", mods = "CTRL" },
     set_environment_variables = {},
+    front_end = "Software",
 }
 
 -- config.front_end = "Software" -- OpenGL doesn't work quite well with RDP.
 config.term = "" -- Set to empty so FZF works on windows
 config.default_prog = { "pwsh.exe", "-NoLogo" }
+
+-- wezterm problem to launch inside hyper-x VM
+config.prefer_egl = true
 
 local act = wezterm.action
 

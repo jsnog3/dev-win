@@ -80,5 +80,5 @@ Copy-Dir "config/.glzr" "$HOME/.glzr"
 Copy-File "config/.wezterm.lua" "$HOME/.wezterm.lua"
 Copy-File "config/.ideavimrc" "$HOME/.ideavimrc"
 Copy-File "config/powershell/Microsoft.Powershell_profile.ps1" "$PROFILE"
-Copy-File "config/.init.lua" "$HOME/AppData/Local/nvim/.init.lua"
+Copy-File "config/init.lua" "$HOME/AppData/Local/nvim/init.lua"
 
